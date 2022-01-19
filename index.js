@@ -26,7 +26,7 @@ color2.addEventListener('click', () => {
 })
 
 color3.addEventListener("click", () => {
-  img.src = "./assets/blue__iphone.png";
+  img.src = "./assets/white__phone.png";
 });
 
 color4.addEventListener("click", () => {
