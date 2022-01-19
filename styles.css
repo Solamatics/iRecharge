@@ -1,0 +1,167 @@
+/*Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  padding: 30px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+/*==========
+container
+===========*/
+main {
+  position: relative;
+  padding: 20px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #fff;
+  text-align: center;
+  width: 300px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: brown;
+  overflow: hidden;
+  max-height: 40%;
+}
+
+.product {
+  width: 300px;
+  text-align: center;
+}
+
+.product p {
+  font-size: 2rem;
+  color: green;
+  font-weight: 700;
+}
+
+.product p span {
+  font-size: 1.3rem;
+}
+
+.price {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: green;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.recommend {
+  position: absolute;
+  top: 12px;
+  left: 2px;
+  background-color: blue;
+  color: #fff;
+  padding: 0.2rem;
+}
+
+.phone {
+  width: 200px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+.color__pickers {
+  text-align: center;
+}
+
+.color {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.recommended {
+  position: absolute;
+  bottom: -12px;
+  left: -12px;
+  border-radius: 20px;
+}
+
+/*============
+Media Query
+=============*/
+@media screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  .phone {
+    width: 100px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .product {
+    padding: 30px;
+  }
+
+  .product h3 {
+    font-size: 0.9rem;
+    padding-bottom: 15px;
+    color: green;
+  }
+
+  .product p {
+    font-size: 1.5rem;
+    color: green;
+    font-weight: 700;
+  }
+
+  .color__pickers {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main {
+    width: 100%;
+  }
+
+  .product h3 {
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+    color: green;
+  }
+
+  .product p {
+    font-size: 1.4rem;
+    color: green;
+    font-weight: 700;
+  }
+}
